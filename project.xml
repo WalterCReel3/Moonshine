@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Moonshine" package="info.wreel.moonshine" version="1.0.0" company="wreel" />
+	<app main="Main" path="Export" file="Moonshine" />
+
+	<window width="854" height="480" fps="60" background="120920"/>
+	<window hardware="true" resizable="false" />
+
+	<window antialiasing="4" if="cpp"/>
+	<window orientation="landscape" vsync="false" if="cpp"/>
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets/fonts" rename="fonts" include="*.ttf" />
+	<assets path="Assets/sounds" rename="sounds" >
+	    <sound path="dub_efx.ogg" id="fail" />
+	    <sound path="leveled.ogg" id="success" />
+	    <sound path="sfx_c4.ogg" id="chime1" />
+	    <sound path="sfx_ds4.ogg" id="chime2" />
+	    <sound path="sfx_ds5.ogg" id="chime3" />
+	    <sound path="sfx_f5.ogg" id="chime4" />
+	    <sound path="sfx_g4.ogg" id="chime5" />
+	    <music path="song.ogg" id="song" />
+	</assets>
+	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<icon path="Assets/openfl.svg" />
+	
+</project>
